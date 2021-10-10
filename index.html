@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ТПП</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+      .gradient {
+        /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%); */
+      }
+      .m__background {
+        background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./img/background.png);
+      }
+    </style>
+  </head>
+  <body
+    class="leading-normal tracking-normal text-white gradient"
+    style="font-family: 'Source Sans Pro', sans-serif"
+  >
+    <!--Nav-->
+    <div class="m__background">
+      <nav id="header" class="w-full z-30 top-0 text-white">
+        <div
+          class="
+            w-full
+            container
+            mx-auto
+            flex flex-wrap
+            items-center
+            justify-between
+            mt-0
+            py-2
+          "
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="
+                toggleColour
+                text-white
+                no-underline
+                hover:no-underline
+                font-bold
+                text-2xl
+                lg:text-4xl
+              "
+              href="#"
+            >
+              <!--Icon AMP -->
+              <img src="./img/amp.svg" alt="" />
+            </a>
+            <a href="#">
+              <!-- Icon TPP-Ro /a> -->
+              <img src="./img/tpp-ro.svg" alt="" />
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="
+                flex
+                items-center
+                p-4
+                text-gray-300
+                hover:text-gray-900
+                focus:outline-none focus:shadow-outline
+                transform
+                transition
+                hover:scale-105
+                duration-300
+                ease-in-out
+              "
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Меню</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="
+              w-full
+              flex-grow
+              lg:flex lg:items-center lg:w-auto
+              hidden
+              mt-2
+              lg:mt-0
+              bg-gray-600
+              lg:bg-transparent
+              text-black
+              p-4
+              lg:p-0
+              z-20
+            "
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    py-2
+                    px-4
+                    text-white
+                    font-bold
+                    no-underline
+                    hover:text-green-200
+                  "
+                  href="#services"
+                  >Услуги</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-white
+                    no-underline
+                    font-bold
+                    py-2
+                    px-4
+                    hover:text-green-200
+                  "
+                  href="#project"
+                  >Реализованные проекты</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-white
+                    no-underline
+                    font-bold
+                    py-2
+                    px-4
+                    hover:text-green-200
+                  "
+                  href="#contact"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="pt-24">
+        <div
+          class="
+            container
+            px-3
+            mx-auto
+            flex flex-wrap flex-col
+            md:flex-row
+            items-center
+          "
+        >
+          <!--Left Col-->
+          <div
+            class="
+              flex flex-col
+              w-full
+              md:w-2/5
+              justify-center
+              items-start
+              text-center
+              md:text-left
+            "
+          >
+            <h1 class="my-4 text-4xl font-bold leading-tight text-left xl:text-5xl">
+              Региональный <br> инжиниринговый <br> центр
+            </h1>
+            <p class="leading-normal text-2xl mb-8">г. Ростов-на-Дону</p>
+            <button
+              class="
+                mx-auto
+                lg:mx-0
+                hover:underline
+                bg-white
+                text-white
+                font-bold
+                rounded-2xl
+                bg-blue-400
+                my-6
+                py-4
+                px-8
+                shadow-lg
+                focus:outline-none focus:shadow-outline
+                transform
+                transition
+                hover:scale-105
+                duration-300
+                ease-in-out
+              "
+            >
+              Подать заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container max-w-5xl mx-auto m-8">
+        <!-- <h1
+          class="
+            w-full
+            my-2
+            text-5xl
+            font-bold
+            leading-tight
+            text-center text-gray-800
+          "
+        >
+          Title
+        </h1> -->
+        <div class="w-full mb-4">
+          <div
+            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+        <div class="flex flex-wrap">
+
+                    <div class="w-full sm:w-1/2 p-6">
+           <img src="./img/info.png" alt="">
+          </div>
+
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-blue-800 font-bold leading-none mb-3">
+              ИНЖИНИРИНГ
+            </h3>
+            <!-- <div
+              class="border-t-4 border-l-4 border-b-4 w-56 h-32 absolute"
+            ></div> -->
+            <p class="text-gray-600 mb-8 p-4">
+              Это комплекс работ, включающий разработку технического решения, экономическое обоснование, проектные работы, поставку оборудования и материалов, монтажные работы, пуско-наладка и сдача готового объекта в эксплуатацию.
+            </p>
+          </div>
+
+          <div class="w-full p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 text-center uppercase pb-4">
+                Направления работ инжинирингового центра
+              </h3>
+              <!-- <p class="text-gray-600 mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.111
+                <br />
+                <br />
+                Images from:
+
+                <a class="text-pink-500 underline" href="https://undraw.co/"
+                  >undraw.co</a
+                >
+              </p> -->
+
+              
+
+              <div class="flex">
+                <div class="w-1/6 px-2">
+                  <img src="./img/i1.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                  <h3 class="font-bold text-xl">
+                    Производственная кооперация
+                  </h3>
+                  <p class="pt-2">
+                    Организация межотраслевой производственной кооперации с целью внедрения передового опыта использования технических и технологических решений, продвижения и коммерциализацией результатов НИОКР, развития системы трансфера технологий и разработок на основе сотрудничества с производственными предприятиями.
+                  </p>
+                </div>
+                </div>
+
+                <div class="flex py-4">
+                <div class="w-1/6 px-2">
+                  <img src="./img/i2.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                  <h3 class="font-bold text-xl">
+                    Технический аудит
+                  </h3>
+                  <p class="pt-2">
+Комплексный анализ системы организации производства, системы контроля и управления качеством, применяемых технических и технологических решений, а также проверка технического состояния машин и оборудования и выработка предложений по организации технического и организационного управления производственным процессом.
+
+                  </p>
+                </div>
+              </div>
+
+                <div class="flex py-4">
+                <div class="w-1/6 px-2">
+                  <img src="./img/i3.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                  <h3 class="font-bold text-xl">
+                    Технологический аудит
+                  </h3>
+                  <p class="pt-2">
+Комплексный анализ существующего технологического уровня производства (компании) и выработка технологических решений по оптимизации: состава технологического оборудования; применяемых технологий; применяемых средств технологического оснащения; улучшения системы технологической подготовки предприятия.
+                  </p>
+                </div>
+              </div>
+
+                              <div class="flex py-4">
+                <div class="w-1/6 px-2">
+                  <img src="./img/i4.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                  <h3 class="font-bold text-xl">
+                    Оптимизация взаимодействия
+                  </h3>
+                  <p class="pt-2">
+Оптимизация взаимодействия участников проекта через управление качеством инвестиций, подбор оптимальных технических и финансово эффективных решений.
+
+                  </p>
+                </div>
+              </div>
+
+                              <div class="flex py-4">
+                <div class="w-1/6 px-2">
+                  <img src="./img/i5.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                  <h3 class="font-bold text-xl">
+                    Технический консалтинг 
+                  </h3>
+                  <p class="pt-2">
+Подбор квалифицированных специалистов для реализации проекта, включая  поиск  эффективного технического решения поставленной задачи и формирования «дорожной карты».
+
+                  </p>
+                </div>
+              </div>
+
+
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <section class="bg-gray-100 py-8">
+      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+        <a name="services"></a>
+        <h1
+          class="
+            w-full
+            my-2
+            text-3xl
+            xl:text-5xl
+            font-bold
+            leading-tight
+            text-center text-gray-800
+          "
+        >
+          УСЛУГИ ИНЖИНИРИНГОВОГО ЦЕНТРА
+        </h1>
+        <div class="w-full mb-4">
+          <div class="flex flex-wrap">
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+              <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u1.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Разработка
+                    </span>
+                      программ технического перевооружения производства
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                         <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u2.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Разработка
+                    </span>
+                      технических решений 
+в управлении производством
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                         <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u3.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Проектирование
+                    </span>
+                       автоматизированных и роботизированных систем 
+и поточных линий
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                                     <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u4.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Подготовка
+                    </span>
+                        проектов технического перевооружения машиностроительных предприятий
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u5.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                      Проекты
+                    <span class="font-bold">
+                       повышения эффективности
+                    </span>
+                         существующих производств и технологий
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                                     <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u6.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Поиск исполнителей
+                    </span>
+                         для контрактного производства 
+деталей
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="flex flex-wrap">
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                                     <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u7.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Разработка и реализация
+                    </span>
+                         проектов создания новых производств, в том числе под ключ с отработкой партий выпуска продукции с заданными критериями производительности, качества и себестоимости
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u8.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                    <span class="font-bold">
+                      Подготовка
+                    </span>
+                         технологических процессов изготовления деталей, включая работы по их внедрению на оборудовании предприятия, различных конфигураций и материалов
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-1/3 py-4 py-4 w-full">
+                                     <div class="flex ">
+                <div class="w-1/6 px-2">
+                  <img src="./img/u9.png" alt="">
+                </div>
+                <div class="text-gray-600 w-5/6 ">
+                    <p>
+                      Технологический 
+                    <span class="font-bold">
+                      скаутинг
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div
+          class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4"
+        >
+          <div
+            class="
+              flex flex-col
+              w-5/6
+              lg:w-1/4
+              mx-auto
+              lg:mx-0
+              rounded-none
+              lg:rounded-l-lg
+              bg-white
+              mt-4
+            "
+          >
+            <div
+              class="
+                flex-1
+                bg-white
+                text-gray-600
+                rounded-t rounded-b-none
+                overflow-hidden
+                shadow
+              "
+            >
+              <div class="p-8 text-3xl font-bold text-center border-b-4">
+                Free
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+              </ul>
+            </div>
+            <div
+              class="
+                flex-none
+                mt-auto
+                bg-white
+                rounded-b rounded-t-none
+                overflow-hidden
+                shadow
+                p-6
+              "
+            >
+              <div
+                class="w-full pt-6 text-3xl text-gray-600 font-bold text-center"
+              >
+                £0
+                <span class="text-base">for one user</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="
+                    mx-auto
+                    lg:mx-0
+                    hover:underline
+                    gradient
+                    text-white
+                    font-bold
+                    rounded-full
+                    my-6
+                    py-4
+                    px-8
+                    shadow-lg
+                    focus:outline-none focus:shadow-outline
+                    transform
+                    transition
+                    hover:scale-105
+                    duration-300
+                    ease-in-out
+                  "
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-col
+              w-5/6
+              lg:w-1/3
+              mx-auto
+              lg:mx-0
+              rounded-lg
+              bg-white
+              mt-4
+              sm:-mt-6
+              shadow-lg
+              z-10
+            "
+          >
+            <div
+              class="
+                flex-1
+                bg-white
+                rounded-t rounded-b-none
+                overflow-hidden
+                shadow
+              "
+            >
+              <div class="w-full p-8 text-3xl font-bold text-center">Basic</div>
+              <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+              <ul class="w-full text-center text-base font-bold">
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+              </ul>
+            </div>
+            <div
+              class="
+                flex-none
+                mt-auto
+                bg-white
+                rounded-b rounded-t-none
+                overflow-hidden
+                shadow
+                p-6
+              "
+            >
+              <div class="w-full pt-6 text-4xl font-bold text-center">
+                £x.99
+                <span class="text-base">/ per user</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="
+                    mx-auto
+                    lg:mx-0
+                    hover:underline
+                    gradient
+                    text-white
+                    font-bold
+                    rounded-full
+                    my-6
+                    py-4
+                    px-8
+                    shadow-lg
+                    focus:outline-none focus:shadow-outline
+                    transform
+                    transition
+                    hover:scale-105
+                    duration-300
+                    ease-in-out
+                  "
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-col
+              w-5/6
+              lg:w-1/4
+              mx-auto
+              lg:mx-0
+              rounded-none
+              lg:rounded-l-lg
+              bg-white
+              mt-4
+            "
+          >
+            <div
+              class="
+                flex-1
+                bg-white
+                text-gray-600
+                rounded-t rounded-b-none
+                overflow-hidden
+                shadow
+              "
+            >
+              <div class="p-8 text-3xl font-bold text-center border-b-4">
+                Pro
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+                <li class="border-b py-4">Thing</li>
+              </ul>
+            </div>
+            <div
+              class="
+                flex-none
+                mt-auto
+                bg-white
+                rounded-b rounded-t-none
+                overflow-hidden
+                shadow
+                p-6
+              "
+            >
+              <div
+                class="w-full pt-6 text-3xl text-gray-600 font-bold text-center"
+              >
+                £x.99
+                <span class="text-base">/ per user</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="
+                    mx-auto
+                    lg:mx-0
+                    hover:underline
+                    gradient
+                    text-white
+                    font-bold
+                    rounded-full
+                    my-6
+                    py-4
+                    px-8
+                    shadow-lg
+                    focus:outline-none focus:shadow-outline
+                    transform
+                    transition
+                    hover:scale-105
+                    duration-300
+                    ease-in-out
+                  "
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>   
+    <section class="container mx-auto text-center py-6 mb-12 text-gray-800">
+            <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+              <a name="project"></a>
+      <h1
+        class="
+          w-full
+          my-2
+          text-3xl
+          xl:text-5xl
+          font-bold
+          leading-tight
+          text-center text-gray-800
+          uppercase
+        "
+      >
+        РеАЛИЗОВАННЫЕ ПРОЕКТЫ
+      </h1>
+
+ <div class="flex flex-wrap">
+
+                    <div class="w-full sm:w-1/2 p-6">
+           <img src="./img/r1.png" alt="">
+          </div>
+
+          <div class="w-5/6 sm:w-1/2 p-6 text-left">
+            <h3 class="text-3xl text-blue-800 font-bold leading-none mb-3">
+              Создание системы энергообеспечения дилерского центра «РОЛЬФ Сити» под ключ
+            </h3>
+            <p class="text-gray-600 mb-8 p-4">
+              Специалисты СТАРТЕЛЕКОМ выполнили полный комплекс электромонтажных работ по системам энергообеспечения, освещения, охранно-пожарной сигнализации, контроля доступа и управления инженерным оборудованием дилерского центра «РОЛЬФ Сити» (площадью более 6 000 м²). Проект был реализован в предельно сжатые сроки — от начала земляных работ до сдачи объекта «под ключ» прошло менее восьми месяцев.
+            </p>
+          </div>
+          </div>
+          <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6 text-left">
+            <h3 class="text-3xl text-blue-800 font-bold leading-none mb-3">
+              Разработка и согласовавание концепции системы удаленного видеонаблюдения для МВД России
+            </h3>
+            <p class="text-gray-600 mb-8 p-4">
+              Всего лишь за пять месяцев СТАРТЕЛЕКОМ удалось провести обследование трассы длиной 250 км и спроектировать «умную» систему, которая способна контролировать дорожную обстановку; автоматически обнаруживать факты нарушения правил дорожного движения, фиксировать их и распечатывать карточки нарушения; распознавать номерные знаки и проводить комплексную проверку транспорта по базам данных в автоматическом режиме; оперативно передавать информацию в соответствии с заданными требованиями.
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 p-6">
+           <img src="./img/r2.png" alt="">
+          </div>
+          </div>
+           <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 p-6">
+           <img src="./img/r3.png" alt="">
+          </div>
+
+          <div class="w-5/6 sm:w-1/2 p-6 text-left">
+            <h3 class="text-3xl text-blue-800 font-bold leading-none mb-3">
+              Обеспечение функционала СОРМ на расширяемых цифровых АТС в разных городах с надзором из единого центра в Москве для Воентелеком
+            </h3>
+            <p class="text-gray-600 mb-8 p-4">
+              Интеграция в инфраструктуру оператора связи СОРМ-концентратора производства ISKRATEL, предусматривающего отказ от прокладки и аренды дорогостоящих потоков Е1. Взаимодействие между отдельными элементами сети было выполнено за счет использования узкой полосы потока данных в IP-сети.Созданный механизм автоматически задействуется только в случае проведения оперативно-розыскных мероприятий, а в пассивном состоянии не требует никаких затрат энергии и вычислительных мощностей. Решение наших специалистов позволило значительно сократить расходы заказчика на внедрение и эксплуатацию СОРМ.
+            </p>
+          </div>
+          </div>
+      <div class="w-full mb-4">
+      </div>
+    </div>
+    </section>
+    <section class="bg-gray-100 py-8">
+      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">            
+       <h1 class="
+            w-full
+            my-2
+            text-3xl
+            xl:text-5xl
+            font-bold
+            leading-tight
+            text-center text-gray-800
+          "
+        >
+         ПОДАЙТЕ ЗАЯВКУ
+        </h1>
+<form action="">
+  <div class="flex flex-wrap py-6">
+
+    <div class="xl:w-1/3 xl:py-0 py-4 px-4 w-full">
+  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="имя">
+    </div>
+        <div class="xl:w-1/3 xl:py-0 py-4 w-full px-4">
+  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tel" type="text" placeholder="телефон">
+    </div>
+        <div class="xl:w-1/3 xl:py-0 py-4 w-full px-4">
+  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="электронная почта">
+    </div>
+</div>  
+<div class="px-6 py-4">
+  <textarea id="msg"  rows="5" class="block w-full text-gray-700 border rounded-lg focus:outline-none p-4" placeholder="ваше сообщение"></textarea>
+</div>
+<div class=" text-center">
+<button class="bg-blue-600 text-white rounded-md font-bold px-4 py-2 text-xl" id="btn">отправить</button>
+</div>
+</form>
+        </div>
+    </section>
+    <section class="container mx-auto text-center py-6 mb-12 text-gray-800">
+            <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+              <a name="contact"></a>
+                    <h3
+        class="
+          w-full
+          my-2
+          text-3xl
+          font-bold
+          leading-tight
+          text-center text-gray-800
+          uppercase
+          pb-8
+        "
+      >
+        если остались вопросы, свяжитесь <br> со специалистами центра
+      </h3>
+      <div class="flex flex-wrap">
+        <div class="xl:w-1/3 w-full xl:py-0 py-4">
+          <div class="flex">
+          <img src="./img/f1.png" alt="" class="w-20 h-20">
+          <div class="flex flex-col text-left px-4">
+            <h1 class="font-bold text-left">Большов Иван</h1>
+            <p class="">
+              amp@copartner.ru
+            </p>
+            <p>
+              +7 (863) 204-22-00
+            </p>
+          </div>
+          </div>
+        </div>
+        <div class="xl:w-1/3 w-full xl:py-0 py-4">
+          <div class="flex">
+          <img src="./img/f2.png" alt="" class="w-20 h-20">
+          <div class="flex flex-col text-left px-4">
+            <h1 class="font-bold text-left">Вересаев Николай</h1>
+            <p class="">
+              amp@copartner.ru
+            </p>
+            <p>
+              +7 (863) 204-22-00
+            </p>
+          </div>
+          </div>
+        </div>
+        <div class="xl:w-1/3 w-full xl:py-0 py-4">
+          <div class="flex">
+          <img src="./img/f3.png" alt="" class="w-20 h-20">
+          <div class="flex flex-col text-left px-4">
+            <h1 class="font-bold text-left">Бусиев Владислав</h1>
+            <p class="">
+              amp@copartner.ru
+            </p>
+            <p>
+              +7 (863) 204-22-00
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+            </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="bg-blue-600 text-white w-full">
+      <div
+        class="
+          w-full
+          container
+          mx-auto
+          flex flex-wrap
+          items-center
+          justify-between
+          mt-0
+          py-2
+        "
+      >
+        <div class="pl-4 flex items-center">
+          <a
+            class="
+              toggleColour
+              text-white
+              no-underline
+              hover:no-underline
+              font-bold
+              text-2xl
+              lg:text-4xl
+            "
+            href="#"
+          >
+            <!--Icon AMP -->
+            <img src="./img/amp.svg" alt="" />
+          </a>
+          <a href="#">
+            <!-- Icon TPP-Ro /a> -->
+            <img src="./img/tpp-ro.svg" alt="" />
+          </a>
+        </div>        
+        <div
+          class="
+            w-full
+            flex-grow
+            lg:flex lg:items-center lg:w-auto
+            hidden
+            mt-2
+            lg:mt-0
+            bg-white
+            lg:bg-transparent
+            text-black
+            p-4
+            lg:p-0
+            z-20
+          "
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white font-bold no-underline hover:text-green-200"
+                href="#services"
+                >Услуги</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="
+                  inline-block
+                  text-white
+                  no-underline
+                  font-bold
+                  py-2
+                  px-4
+                  hover:text-green-200
+                "
+                href="#project"
+                >Реализованные проекты</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="
+                  inline-block
+                  text-white
+                  no-underline
+                  font-bold
+                  py-2
+                  px-4
+                  hover:text-green-200
+                "
+                href="#contact"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById('nav-content');
+      var navMenu = document.getElementById('nav-toggle');
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains('hidden')) {
+              navMenuDiv.classList.remove('hidden');
+            } else {
+              navMenuDiv.classList.add('hidden');
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add('hidden');
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
